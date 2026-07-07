@@ -12,9 +12,8 @@ body{
 }
 
 .hero{
-    min-height:100vh;
+    height:100vh;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
@@ -25,17 +24,43 @@ body{
     background-position:center;
 }
 
+@keyframes glow {
+  0% { text-shadow: 0 0 20px rgba(255,95,109,.4); }
+  50% { text-shadow: 0 0 40px rgba(255,195,113,.9); }
+  100% { text-shadow: 0 0 20px rgba(255,95,109,.4); }
+}
+
 .hero h1{
-    font-size:5rem;
+    font-size:6rem;
+    font-weight:800;
+    letter-spacing:4px;
     text-transform:uppercase;
-    background:linear-gradient(90deg,#ff4d6d,#ffb703);
+    background:linear-gradient(90deg,#ff5f6d,#ffc371);
     -webkit-background-clip:text;
     color:transparent;
+    animation: glow 3s infinite ease-in-out;
+	
 }
 
 .hero p{
-    font-size:1.2rem;
+    font-size:1.5rem;
     margin-top:15px;
+    color:#ddd;
+}
+
+.stats{
+    margin-top:30px;
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.stats span{
+    background:rgba(255,255,255,.08);
+    padding:12px 20px;
+    border-radius:30px;
+    backdrop-filter:blur(10px);
 }
 
 .anime-grid{
@@ -80,4 +105,16 @@ body{
     color:#ff4d6d;
     text-decoration:none;
     font-weight:bold;
+}
+
+.scroll-down{
+    margin-top:50px;
+    font-size:1.1rem;
+    opacity:.8;
+    animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(10px);}
 }
