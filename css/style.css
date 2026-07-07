@@ -118,3 +118,83 @@ body{
     0%,100%{transform:translateY(0);}
     50%{transform:translateY(10px);}
 }
+
+.anime-card{
+    position:relative;
+    height:350px;
+    border-radius:20px;
+    overflow:hidden;
+    background-size:cover;
+    background-position:center;
+}
+
+.anime-card::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+    to top,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0.2)
+);
+}
+
+.anime-card *{
+    position:relative;
+    z-index:1;
+}
+
+.onepiece{
+    background-image:url('../assets/onepiece.jpg');
+}
+
+.naruto{
+    background-image:url('../assets/naruto.jpg');
+}
+
+.demonslayer{
+    background-image:url('../assets/demonslayer.jpg');
+}
+
+.jjk{
+    background-image:url('../assets/jjk.jpg');
+}
+
+.onepiece:hover{
+    box-shadow:0 0 30px gold;
+}
+
+.naruto:hover{
+    box-shadow:0 0 30px orange;
+}
+
+.demonslayer:hover{
+    box-shadow:0 0 30px cyan;
+}
+
+.jjk:hover{
+    box-shadow:0 0 30px purple;
+}
+
+.anime-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:25px;
+    transition:0.4s;
+}
+
+.anime-card h3{
+    font-size:1.6rem;
+    margin-bottom:10px;
+}
+
+.anime-card p{
+    margin-bottom:15px;
+}
+
+.anime-card a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
