@@ -145,19 +145,19 @@ body{
 }
 
 .onepiece{
-    background-image:url('../assets/onepiece.jpg');
+    background-image:url('../assets/onepiece.png');
 }
 
 .naruto{
-    background-image:url('../assets/naruto.jpg');
+    background-image:url('../assets/naruto.png');
 }
 
 .demonslayer{
-    background-image:url('../assets/demonslayer.jpg');
+    background-image:url('../assets/demonslayer.png');
 }
 
 .jjk{
-    background-image:url('../assets/jjk.jpg');
+    background-image:url('../assets/jjk.png');
 }
 
 .onepiece:hover{
