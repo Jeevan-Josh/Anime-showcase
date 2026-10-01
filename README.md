@@ -26,8 +26,9 @@ Or serve it with a simple HTTP server (recommended for relative paths and assets
 
 ```bash
 python -m http.server 8000
-# then open http://localhost:8000 in your browser
 ```
+Live Server: http://localhost:8000 in your browser
+
 
 If you use VS Code, the Live Server extension also works well.
 
