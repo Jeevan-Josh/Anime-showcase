@@ -27,7 +27,8 @@ Or serve it with a simple HTTP server (recommended for relative paths and assets
 ```bash
 python -m http.server 8000
 ```
-Live Server: http://localhost:8000 in your browser
+Local Host: http://localhost:8000 in your browser.
+Live Server: https://jeevan-josh.github.io/Anime-showcase
 
 
 If you use VS Code, the Live Server extension also works well.
